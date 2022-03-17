@@ -11,7 +11,47 @@
 		BD9EA1902718E12200874007 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA18F2718E12200874007 /* ContentView.swift */; };
 		BD9EA1922718E12400874007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9EA1912718E12400874007 /* Assets.xcassets */; };
 		BD9EA1952718E12400874007 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9EA1942718E12400874007 /* Preview Assets.xcassets */; };
+		BD9EA1A22718E14000874007 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9EA1A12718E14000874007 /* UniformTypeIdentifiers.framework */; };
+		BD9EA1A52718E14000874007 /* FileProviderExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA1A42718E14000874007 /* FileProviderExtension.swift */; };
+		BD9EA1A72718E14000874007 /* FileProviderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA1A62718E14000874007 /* FileProviderItem.swift */; };
+		BD9EA1A92718E14000874007 /* FileProviderEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA1A82718E14000874007 /* FileProviderEnumerator.swift */; };
+		BD9EA1B32718E14000874007 /* DocumentActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9EA1B22718E14000874007 /* DocumentActionViewController.swift */; };
+		BD9EA1B62718E14000874007 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9EA1B42718E14000874007 /* MainInterface.storyboard */; };
+		BD9EA1BA2718E14000874007 /* blinkfileproviderUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD9EA1B02718E14000874007 /* blinkfileproviderUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BD9EA1BD2718E14000874007 /* blinkfileprovider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BD9EA19F2718E14000874007 /* blinkfileprovider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD9EA1B82718E14000874007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD9EA1822718E12200874007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9EA1AF2718E14000874007;
+			remoteInfo = blinkfileproviderUI;
+		};
+		BD9EA1BB2718E14000874007 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD9EA1822718E12200874007 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD9EA19E2718E14000874007;
+			remoteInfo = blinkfileprovider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD9EA1C42718E14000874007 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BD9EA1BD2718E14000874007 /* blinkfileprovider.appex in Embed App Extensions */,
+				BD9EA1BA2718E14000874007 /* blinkfileproviderUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD9EA18A2718E12200874007 /* blk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blk.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +59,36 @@
 		BD9EA18F2718E12200874007 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD9EA1912718E12400874007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD9EA1942718E12400874007 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD9EA19F2718E14000874007 /* blinkfileprovider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = blinkfileprovider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9EA1A12718E14000874007 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		BD9EA1A42718E14000874007 /* FileProviderExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderExtension.swift; sourceTree = "<group>"; };
+		BD9EA1A62718E14000874007 /* FileProviderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderItem.swift; sourceTree = "<group>"; };
+		BD9EA1A82718E14000874007 /* FileProviderEnumerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProviderEnumerator.swift; sourceTree = "<group>"; };
+		BD9EA1AA2718E14000874007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9EA1AB2718E14000874007 /* blinkfileprovider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blinkfileprovider.entitlements; sourceTree = "<group>"; };
+		BD9EA1B02718E14000874007 /* blinkfileproviderUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = blinkfileproviderUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9EA1B22718E14000874007 /* DocumentActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentActionViewController.swift; sourceTree = "<group>"; };
+		BD9EA1B52718E14000874007 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		BD9EA1B72718E14000874007 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BD9EA1872718E12200874007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9EA19C2718E14000874007 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9EA1A22718E14000874007 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9EA1AD2718E14000874007 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				BD9EA18C2718E12200874007 /* blk */,
+				BD9EA1A32718E14000874007 /* blinkfileprovider */,
+				BD9EA1B12718E14000874007 /* blinkfileproviderUI */,
+				BD9EA1A02718E14000874007 /* Frameworks */,
 				BD9EA18B2718E12200874007 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				BD9EA18A2718E12200874007 /* blk.app */,
+				BD9EA19F2718E14000874007 /* blinkfileprovider.appex */,
+				BD9EA1B02718E14000874007 /* blinkfileproviderUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +138,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BD9EA1A02718E14000874007 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9EA1A12718E14000874007 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD9EA1A32718E14000874007 /* blinkfileprovider */ = {
+			isa = PBXGroup;
+			children = (
+				BD9EA1A42718E14000874007 /* FileProviderExtension.swift */,
+				BD9EA1A62718E14000874007 /* FileProviderItem.swift */,
+				BD9EA1A82718E14000874007 /* FileProviderEnumerator.swift */,
+				BD9EA1AA2718E14000874007 /* Info.plist */,
+				BD9EA1AB2718E14000874007 /* blinkfileprovider.entitlements */,
+			);
+			path = blinkfileprovider;
+			sourceTree = "<group>";
+		};
+		BD9EA1B12718E14000874007 /* blinkfileproviderUI */ = {
+			isa = PBXGroup;
+			children = (
+				BD9EA1B22718E14000874007 /* DocumentActionViewController.swift */,
+				BD9EA1B42718E14000874007 /* MainInterface.storyboard */,
+				BD9EA1B72718E14000874007 /* Info.plist */,
+			);
+			path = blinkfileproviderUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +178,52 @@
 				BD9EA1862718E12200874007 /* Sources */,
 				BD9EA1872718E12200874007 /* Frameworks */,
 				BD9EA1882718E12200874007 /* Resources */,
+				BD9EA1C42718E14000874007 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BD9EA1B92718E14000874007 /* PBXTargetDependency */,
+				BD9EA1BC2718E14000874007 /* PBXTargetDependency */,
 			);
 			name = blk;
 			productName = blk;
 			productReference = BD9EA18A2718E12200874007 /* blk.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BD9EA19E2718E14000874007 /* blinkfileprovider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9EA1C12718E14000874007 /* Build configuration list for PBXNativeTarget "blinkfileprovider" */;
+			buildPhases = (
+				BD9EA19B2718E14000874007 /* Sources */,
+				BD9EA19C2718E14000874007 /* Frameworks */,
+				BD9EA19D2718E14000874007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blinkfileprovider;
+			productName = blinkfileprovider;
+			productReference = BD9EA19F2718E14000874007 /* blinkfileprovider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BD9EA1AF2718E14000874007 /* blinkfileproviderUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD9EA1BE2718E14000874007 /* Build configuration list for PBXNativeTarget "blinkfileproviderUI" */;
+			buildPhases = (
+				BD9EA1AC2718E14000874007 /* Sources */,
+				BD9EA1AD2718E14000874007 /* Frameworks */,
+				BD9EA1AE2718E14000874007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blinkfileproviderUI;
+			productName = blinkfileproviderUI;
+			productReference = BD9EA1B02718E14000874007 /* blinkfileproviderUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +236,12 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					BD9EA1892718E12200874007 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BD9EA19E2718E14000874007 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					BD9EA1AF2718E14000874007 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -116,6 +260,8 @@
 			projectRoot = "";
 			targets = (
 				BD9EA1892718E12200874007 /* blk */,
+				BD9EA19E2718E14000874007 /* blinkfileprovider */,
+				BD9EA1AF2718E14000874007 /* blinkfileproviderUI */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +273,21 @@
 			files = (
 				BD9EA1952718E12400874007 /* Preview Assets.xcassets in Resources */,
 				BD9EA1922718E12400874007 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9EA19D2718E14000874007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9EA1AE2718E14000874007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9EA1B62718E14000874007 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +303,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9EA19B2718E14000874007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9EA1A52718E14000874007 /* FileProviderExtension.swift in Sources */,
+				BD9EA1A72718E14000874007 /* FileProviderItem.swift in Sources */,
+				BD9EA1A92718E14000874007 /* FileProviderEnumerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD9EA1AC2718E14000874007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD9EA1B32718E14000874007 /* DocumentActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD9EA1B92718E14000874007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD9EA1AF2718E14000874007 /* blinkfileproviderUI */;
+			targetProxy = BD9EA1B82718E14000874007 /* PBXContainerItemProxy */;
+		};
+		BD9EA1BC2718E14000874007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD9EA19E2718E14000874007 /* blinkfileprovider */;
+			targetProxy = BD9EA1BB2718E14000874007 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD9EA1B42718E14000874007 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD9EA1B52718E14000874007 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BD9EA1962718E12400874007 /* Debug */ = {
@@ -264,6 +467,7 @@
 		BD9EA1992718E12400874007 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,6 +498,7 @@
 		BD9EA19A2718E12400874007 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,6 +526,108 @@
 			};
 			name = Release;
 		};
+		BD9EA1BF2718E14000874007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV2S48975V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinkfileproviderUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinkfileproviderUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.blk.blinkfileproviderUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD9EA1C02718E14000874007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV2S48975V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinkfileproviderUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinkfileproviderUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.blk.blinkfileproviderUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD9EA1C22718E14000874007 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = blinkfileprovider/blinkfileprovider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV2S48975V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinkfileprovider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinkfileprovider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.blk.blinkfileprovider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD9EA1C32718E14000874007 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = blinkfileprovider/blinkfileprovider.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV2S48975V;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinkfileprovider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinkfileprovider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Com.CarlosCabanero.blk.blinkfileprovider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +645,24 @@
 			buildConfigurations = (
 				BD9EA1992718E12400874007 /* Debug */,
 				BD9EA19A2718E12400874007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD9EA1BE2718E14000874007 /* Build configuration list for PBXNativeTarget "blinkfileproviderUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9EA1BF2718E14000874007 /* Debug */,
+				BD9EA1C02718E14000874007 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD9EA1C12718E14000874007 /* Build configuration list for PBXNativeTarget "blinkfileprovider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD9EA1C22718E14000874007 /* Debug */,
+				BD9EA1C32718E14000874007 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
